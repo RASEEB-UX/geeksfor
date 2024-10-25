@@ -1,18 +1,183 @@
+To design a website similar to the one in the image using HTML, CSS, and JavaScript, I can create a basic structure and styling for you. Here's a code template that closely follows the layout shown in the image.
+
+HTML (index.html)
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Simple HTML Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Aiden - Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>this is amaan and i am creating this line for push git on my vs code <h1>
-</h1>the anotherline for local repsitory <h1>
-    <h1>Welcome to My Website</h1>
+    <header>
+        <div class="container">
+            <h1>Hi, I'm Jacob Aiden</h1>
+            <h2>Frontend Developer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <div class="buttons">
+                <a href="#about" class="btn">About Me</a>
+                <a href="#portfolio" class="btn">Portfolio</a>
+            </div>
+        </div>
+    </header>
 
-    <h1>the other line for local repositary <h1>
-        <H1> the other line for next day change <h1>
-        </h1>git hub with new </H1>
-    <p>This is a simple HTML page with some basic content.</p>
-    <button onclick="alert('Hello! You clicked the button.')">Click Me!</button>
-</h1>the second line and i am adding through vs code so that i can push it to github<h1></h1>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h3>About Me</h3>
+            <div class="about-content">
+                <img src="profile.jpg" alt="Jacob Aiden" class="profile-img">
+                <p>Hi, I'm Jacob Aiden, a frontend developer with experience in creating modern web designs. My passion is to bring your ideas to life with elegant and efficient code.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h3>My Skills</h3>
+            <div class="skills">
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="skill-bar" style="width: 90%;"></div>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="skill-bar" style="width: 80%;"></div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="skill-bar" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <form action="submit-form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Designed by Jacob Aiden</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
+CSS (style.css)
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0f1c;
+    color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('background.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.buttons .btn {
+    background-color: #3498db;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.about-section, .skills-section, .contact-section {
+    padding: 50px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.skills .skill {
+    margin-bottom: 15px;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #3498db;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #10161d;
+    text-align: center;
+}
+
+JavaScript (script.js)
+
+For the basic layout you've shown, JavaScript may not be necessary, but you can add interactivity later as needed.
+
+// Add interactivity here if needed
+
+Notes:
+
+1. Replace background.jpg with the actual background image path.
+
+
+2. Replace profile.jpg with the actual profile image path.
+
+
+3. You can add more skills or enhance the design by using animations, transitions, or JavaScript interactions.
+
+
+
+Let me know if you'd like more advanced features!
+
